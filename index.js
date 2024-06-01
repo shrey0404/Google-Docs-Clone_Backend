@@ -12,7 +12,7 @@ Connection();
 
 const io = new Server(PORT, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: `${process.env.CLIENT_SIDE}`,
     methods: ["GET", "POST"],
   },
 });
